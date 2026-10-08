@@ -1,32 +1,21 @@
-# Marcin Chojnacki portfolio
+# Marcin Chojnacki portfolio — book preview
 
-Review v2: Six responsive chapters at `/portfolio/`. Plain HTML, CSS and JavaScript; the approved portrait, Career Hub image and G24H brand image are embedded, so the page has no runtime dependencies.
+Six chapters across 16 pages. One page at a time, with Previous/Next, keyboard arrows, horizontal swipe and a contents dialog. Normal pages fit the screen; content scrolls only when enlarged text or a short viewport makes it necessary. Header, page and navigation occupy separate layout rows, so controls do not overlay content. Uses dynamic viewport height and safe-area insets.
 
-Links from the existing hub menu and About section lead to the portfolio. Referral code, eligibility gates, country warnings and invitation flow are preserved. The current site’s LinkedIn, Linktree and Ko-fi destinations are reused. No personal phone or email is published.
+The supplied portrait appears on the opening and closing pages. G24H appears in the Grow24Hub chapter. The cropped Career Hub poster is omitted. Embedded images have no runtime dependencies. Copy remains factual, based on the approved project content and current CV.
 
-Content is grounded in the existing hub, the current Grow24Hub project direction and Marcin’s CV updated on 7 October 2026. No invented statistics or testimonials.
+The existing website menu/About links lead to `/portfolio/`. Referral code, eligibility gates, country warnings, invitation flow and contact destinations are preserved.
 
 ## Verification
 
-Headless Chromium checks passed at 320×568, 360×800, 390×844, 412×915, 768×1024 and 1440×1000:
+Headless Chromium: all 16 pages at 320×568, 360×800, 390×844, 412×915, 768×1024 and 1440×1000. No vertical scrolling at normal text size, horizontal overflow, heading clipping or navigation overlap. Primary body text is 16px or larger.
 
-- Exactly one visible page; no horizontal overflow or heading clipping.
-- Normal body copy 16px or above; usable at 200% root text size.
-- Previous/Next, contents menu, arrow keys and page counter.
-- Horizontal swipe changes page; vertical gesture does not.
-- Reduced-motion preference disables animation.
-- Persistent mobile navigation stays visible while scrolling. Dynamic bottom spacing lets all content clear the dock at 100% and 200% text enlargement.
-- Supplied portrait on page 1, Career Hub visual on page 3 and G24H on page 4.
-- Exact current quality review title; previous product support role and three separate degree entries.
-- Swipe guidance on the first page only; simplified return link and secondary Ko-fi support.
-- Existing eligibility result, country disclosure/warning and after-referral stop gate.
+Also checked 200% text, accessibility scrolling at 320×430, disabled first/last buttons, all six contents jumps, keyboard arrows, bidirectional swipe, reduced motion, and existing referral eligibility/country warning/invitation stop gates.
 
-The static page was visually inspected with phone and desktop screenshots. No physical Android or iOS device testing was available. External contact destinations are reused from the approved site; signed-in destination behavior was not tested.
+Phone and desktop screenshots were visually inspected. Physical Android/iOS, live mobile browser chrome and platform-specific safe-area behavior remain unverified. Signed-in contact destination behavior was not tested.
 
 ## Publication
 
-This is a review draft. Merge only after Marcin approves publication. After deployment, the intended shareable LinkedIn portfolio URL is:
+Review draft only. Do not merge or publish without Marcin’s approval. Intended live link after publication:
 
 https://grow24hub.com/portfolio/
-
-An unpublished source branch is not a live website URL.
